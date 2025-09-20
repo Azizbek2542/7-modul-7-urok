@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Коктакты</h2>
+        
+        <div class="form-group">
+            <input type="text" id="name" placeholder="Имя" required>
+            <input type="tel" id="phone" placeholder="Телефон" required>
+            <button onclick="addContact()">Добавить</button>
+        </div>
+
+        <div class="success" id="successMessage"></div>
+
+        <ul id="contactList"></ul>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>

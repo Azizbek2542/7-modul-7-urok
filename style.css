@@ -1,0 +1,147 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #f9f9f9, #e3f2fd);
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  color: #333;
+}
+
+.container {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  background: #fff;
+  padding: 25px 30px;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  width: 420px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-3px);
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #1976d2;
+  font-size: 24px;
+}
+
+.form-group {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.form-group input {
+  flex: 1;
+  min-width: 120px;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: border-color 0.2s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #1976d2;
+  box-shadow: 0 0 5px rgba(25, 118, 210, 0.3);
+}
+
+.form-group button {
+  padding: 12px 18px;
+  border: none;
+  background: #1976d2;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.form-group button:hover {
+  background: #1565c0;
+  transform: scale(1.05);
+}
+
+/* Успешное сообщение */
+.success {
+  margin-top: 12px;
+  font-size: 14px;
+  color: green;
+}
+
+/* Список контактов */
+#contactList {
+  list-style: none;
+  margin: 20px 0 0;
+  padding: 0;
+}
+
+#contactList li {
+  background: #f8f9fa;
+  border: 1px solid #ddd;
+  margin-bottom: 12px;
+  padding: 12px 15px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: transform 0.2s, background 0.2s;
+}
+
+#contactList li:hover {
+  background: #e3f2fd;
+  transform: translateX(3px);
+}
+
+#contactList span {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.actions button {
+  border: none;
+  background: none;
+  font-size: 18px;
+  margin-left: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.actions button:hover {
+  transform: scale(1.2);
+}
+
+.actions .delete {
+  color: #e53935;
+}
+
+.actions .delete:hover {
+  color: #c62828;
+}
+
+.actions button:first-child {
+  color: #1976d2;
+}
+
+.actions button:first-child:hover {
+  color: #0d47a1;
+}
+
+#successMessage {
+  display: none;
+  color: green;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+#successMessage.active {
+    display: block;
+}
